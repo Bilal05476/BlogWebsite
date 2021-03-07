@@ -5,7 +5,7 @@ import "./css/Secondary.css";
 
 const SecondaryHead = () => {
   return (
-    <div className="secondary__head">
+    <div className="secondary__head px-3">
       <div className="container">
         <h6>March 6, 2021</h6>
         <div className="secondary__icons">

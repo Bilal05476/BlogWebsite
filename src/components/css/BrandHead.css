@@ -29,3 +29,24 @@
   outline: none !important;
   border-radius: 4rem;
 }
+
+.searchIcon {
+  padding: 0.2rem;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  padding-left: 2rem;
+}
+@media (max-width: 767px) {
+  .searchbar {
+    width: 40%;
+  }
+  .brand__header {
+    padding: 1rem;
+  }
+}

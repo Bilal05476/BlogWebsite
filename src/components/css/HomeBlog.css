@@ -1,0 +1,26 @@
+.blog__content {
+  display: flex;
+}
+.left__content {
+  flex: 0.7;
+}
+.right__content {
+  flex: 0.3;
+}
+
+.col__right__paper {
+  height: 400px;
+}
+@media (max-width: 767px) {
+  .blog__content {
+    display: block;
+  }
+  .left__content {
+    flex: 1;
+  }
+  .blogTitle {
+    font-size: 1.5rem !important;
+    padding: 2rem !important;
+    font-weight: 500 !important;
+  }
+}
