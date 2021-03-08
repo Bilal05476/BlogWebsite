@@ -1,15 +1,13 @@
-import MailIcon from "@material-ui/icons/Mail";
 import SearchIcon from "@material-ui/icons/Search";
 import "./css/BrandHead.css";
 import InputBase from "@material-ui/core/InputBase";
+import SubsModal from "./SubsModal";
 
 const BrandHeader = () => {
   return (
     <div className="brand__header">
       <div className="subscribes__action d-none d-md-block">
-        <button className="btn subsButton">
-          <MailIcon /> &nbsp; SUBSCRIBE
-        </button>
+        <SubsModal />
       </div>
       <div className="logo">
         <img

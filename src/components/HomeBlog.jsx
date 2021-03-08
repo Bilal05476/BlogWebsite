@@ -3,6 +3,9 @@
 import "./css/HomeBlog.css";
 import BlogCard from "./BlogCard";
 import DailyBlog from "./DailyBlog";
+import SocialComponent from "./SocialComponent";
+import ServicesCard from "./ServicesCard";
+import SubscriptionForm from "./SubscriptionForm";
 
 export default function HomeBlog() {
   return (
@@ -26,44 +29,57 @@ export default function HomeBlog() {
 
         <div className="container text-center">
           <h2 className="py-3" style={{ fontWeight: "700" }}>
-            Daily Updates
+            Daily Quotes
           </h2>
         </div>
 
         <div className="row m-3">
-          <div className="col-md-3 mb-3">
-            <DailyBlog content="lorem10" className=" p-3" />
+          <div className="col-md-12 mb-3 d-block d-md-none">
+            <ServicesCard />
           </div>
           <div className="col-md-3 mb-3">
-            <DailyBlog content="lorem10" className=" p-3" />
+            <DailyBlog
+              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
+              title="everything you do in this life has the return good or bad"
+              author="Bilal Ahmed"
+              className=" p-3"
+            />
           </div>
           <div className="col-md-3 mb-3">
-            <DailyBlog content="lorem10" className=" p-3" />
+            <DailyBlog
+              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
+              title="everything you do in this life has the return good or bad"
+              author="Bilal Ahmed"
+              className=" p-3"
+            />
           </div>
           <div className="col-md-3 mb-3">
-            <DailyBlog content="lorem10" className=" p-3" />
+            <DailyBlog
+              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
+              title="everything you do in this life has the return good or bad"
+              author="Bilal Ahmed"
+              className=" p-3"
+            />
+          </div>
+          <div className="col-md-3 mb-5">
+            <DailyBlog
+              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
+              title="everything you do in this life has the return good or bad"
+              author="Bilal Ahmed"
+              className=" p-3"
+            />
           </div>
         </div>
 
         <div className="row m-3">
           <div className="col-md-6 mb-3">
             <BlogCard
-              blogImg="https://neilpatel.com/wp-content/uploads/2020/10/how-to-start-a-blog-featured-image.jpg"
-              content=" Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+              blogImg="https://www.wpbeginner.com/wp-content/uploads/2018/07/whatisblog.png"
+              content=" A blog is a type of website where the content is presented in reverse chronological order (newer content appear first). Blog content is often referred to as entries or “blog posts”.
+                    Blogs are typically run by an individual or a small group of people to present information in a conversational style. However, now there are tons of corporate blogs that produce a lot of informational and thought-leadership style content."
               userName="Bilal Ahmed"
               dateAndTime="March 07, 2021"
-              title=" Lorem Ipsum has been the industry's 1500s!"
-              userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
-              className=" p-3"
-            />
-          </div>
-          <div className="col-md-6 mb-3 ">
-            <BlogCard
-              blogImg="https://neilpatel.com/wp-content/uploads/2020/10/how-to-start-a-blog-featured-image.jpg"
-              content=" Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-              userName="Bilal Ahmed"
-              dateAndTime="March 07, 2021"
-              title=" Lorem Ipsum has been the industry's 1500s!"
+              title=" What is a Website?"
               userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
               className=" p-3"
             />
@@ -74,26 +90,13 @@ export default function HomeBlog() {
       <div className="right__content">
         <div className="row m-3">
           <div className="col-md-12 mb-3">
-            <BlogCard
-              blogImg="https://neilpatel.com/wp-content/uploads/2020/10/how-to-start-a-blog-featured-image.jpg"
-              content=" Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-              userName="Bilal Ahmed"
-              dateAndTime="March 07, 2021"
-              title=" Lorem Ipsum has been the industry's 1500s!"
-              userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
-              className=" p-3"
-            />
+            <SocialComponent />
           </div>
-          <div className="col-md-12 mb-3 ">
-            <BlogCard
-              blogImg="https://neilpatel.com/wp-content/uploads/2020/10/how-to-start-a-blog-featured-image.jpg"
-              content=" Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-              userName="Bilal Ahmed"
-              dateAndTime="March 07, 2021"
-              title=" Lorem Ipsum has been the industry's 1500s!"
-              userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
-              className=" p-3"
-            />
+          <div className="col-md-12 mb-3 d-none d-md-block">
+            <ServicesCard />
+          </div>
+          <div className="col-md-12 mb-3 d-none d-md-block">
+            <SubscriptionForm />
           </div>
         </div>
       </div>

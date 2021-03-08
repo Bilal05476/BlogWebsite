@@ -70,11 +70,16 @@ export default function BlogCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" style={{ outline: "none" }}>
-          <FavoriteIcon />
+        <IconButton
+          className=" text-danger"
+          aria-label="add to favorites"
+          style={{ outline: "none" }}
+        >
+          <FavoriteIcon /> <span className="mx-1">0</span>
         </IconButton>
+
         <IconButton aria-label="share" style={{ outline: "none" }}>
-          <ShareIcon />
+          <ShareIcon className="text-success" />
         </IconButton>
       </CardActions>
     </Card>
