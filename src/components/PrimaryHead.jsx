@@ -4,7 +4,6 @@ import SubjectIcon from "@material-ui/icons/Subject";
 import Navigation from "./Navigation";
 
 const PrimaryHead = () => {
-  console.log(Navigation);
   return (
     <nav className="navbar navbar-expand-md navbar-dark primary__head">
       <button
@@ -21,24 +20,6 @@ const PrimaryHead = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <div className="container">
           <ul className="navbar-nav">
-            {/* {[
-              "Home",
-              "Blog",
-              "ReactJs",
-              "MERN Stack",
-              "Firebase",
-              "Bootstrap",
-              "About",
-              "Contact",
-            ].map((item, ind) => {
-              return (
-                <li key={ind} className="nav-item">
-                  <NavLink className="nav-link" to="/">
-                    {item}
-                  </NavLink>
-                </li>
-              );
-            })} */}
             {Navigation.map((val, ind) => {
               return (
                 <li key={ind} className="nav-item">

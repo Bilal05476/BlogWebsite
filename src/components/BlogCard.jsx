@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
+import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,10 +41,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BlogCard(props) {
   const classes = useStyles();
+  const [counter, setCounter] = useState(0);
 
-  // const handleExpandClick = () => {
-  //   setExpanded(!expanded);
-  // };
+  const counterInc = () => {
+    setCounter((prevCount) => prevCount + 1);
+  };
 
   return (
     <Card className={classes.root}>
@@ -74,8 +76,9 @@ export default function BlogCard(props) {
           className=" text-danger"
           aria-label="add to favorites"
           style={{ outline: "none" }}
+          onClick={counterInc}
         >
-          <FavoriteIcon /> <span className="mx-1">0</span>
+          <FavoriteIcon /> <span className="mx-1">{counter}</span>
         </IconButton>
 
         <IconButton aria-label="share" style={{ outline: "none" }}>

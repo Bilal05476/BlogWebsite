@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/HomeBlog.css";
 import BlogCard from "./BlogCard";
 
