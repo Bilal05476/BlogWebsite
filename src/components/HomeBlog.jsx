@@ -6,6 +6,7 @@ import DailyBlog from "./DailyBlog";
 import SocialComponent from "./SocialComponent";
 import ServicesCard from "./ServicesCard";
 import SubscriptionForm from "./SubscriptionForm";
+import Blog from "./BlogPost.json";
 
 export default function HomeBlog() {
   return (
@@ -51,18 +52,22 @@ export default function HomeBlog() {
 
         {/* Random Blogs */}
         <div className="row m-3">
-          <div className="col-md-6 mb-3">
-            <BlogCard
-              blogImg="https://www.wpbeginner.com/wp-content/uploads/2018/07/whatisblog.png"
-              content=" A blog is a type of website where the content is presented in reverse chronological order (newer content appear first). Blog content is often referred to as entries or “blog posts”.
-                    Blogs are typically run by an individual or a small group of people to present information in a conversational style. However, now there are tons of corporate blogs that produce a lot of informational and thought-leadership style content."
-              userName="Bilal Ahmed"
-              dateAndTime="March 07, 2021"
-              title=" What is a Website?"
-              userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
-              className=" p-3"
-            />
-          </div>
+          {Object.keys(Blog).map((item) => {
+            const data = Blog(item);
+            return (
+              <div className="col-md-6 mb-3" key={item.id}>
+                <BlogCard
+                  blogImg={data.blogImage}
+                  content={item.content}
+                  userName={item.username}
+                  dateAndTime={item.datetime}
+                  title={item.title}
+                  userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
+                  className=" p-3"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
 

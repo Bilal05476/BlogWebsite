@@ -1,0 +1,18 @@
+{
+    "blog": {
+        "id": "blog",
+        "blogImage": "http://blog.addthiscdn.com/wp-content/uploads/2014/11/addthis-react-flux-javascript-scaling.png",
+        "content": "React 17 enables gradual React upgrades. When you upgrade from React 15 to 16 (or, this time, from React 16 to 17), you would usually upgrade your whole app at once. This works well for many apps. But it can get increasingly challenging if the codebase was written more than a few years ago and isn’t actively maintained. And while it’s possible to use two versions of React on the page, until React 17 this has been fragile and caused problems with events. We’re fixing many of those problems with React 17. ",
+        "username": "Dan Abramov and Rachel Nabors",
+        "datetime": "October 20, 2020",
+        "title": "React v17.0"
+    },
+    "blog2": {
+        "id": "blog2",
+        "blogImage": "http://blog.addthiscdn.com/wp-content/uploads/2014/11/addthis-react-flux-javascript-scaling.png",
+        "content": "React 17 enables gradual React upgrades. When you upgrade from React 15 to 16 (or, this time, from React 16 to 17), you would usually upgrade your whole app at once. This works well for many apps. But it can get increasingly challenging if the codebase was written more than a few years ago and isn’t actively maintained. And while it’s possible to use two versions of React on the page, until React 17 this has been fragile and caused problems with events. We’re fixing many of those problems with React 17. ",
+        "username": "Dan Abramov and Rachel Nabors",
+        "datetime": "October 20, 2020",
+        "title": "React v16.0"
+    }
+}
