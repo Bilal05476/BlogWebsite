@@ -10,6 +10,7 @@ import FirebaseBlog from "./FirebaseBlog";
 import BootsBlog from "./BootsBlog";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const MainComponent = () => {
   return (
@@ -28,6 +29,7 @@ const MainComponent = () => {
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/contact" component={Contact}></Route>
         </Switch>
+        <Footer />
       </div>
     </div>
   );

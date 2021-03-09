@@ -6,7 +6,7 @@ import SubsModal from "./SubsModal";
 const BrandHeader = () => {
   return (
     <div className="brand__header">
-      <div className="subscribes__action d-none d-md-block">
+      <div className="subscribes__action order-last d-block d-md-none">
         <SubsModal />
       </div>
       <div className="logo">
@@ -17,15 +17,17 @@ const BrandHeader = () => {
           alt=""
         />
       </div>
-      <div className="searchbar">
-        <div className="searchIcon">
-          <SearchIcon />
+      <div className="d-none d-md-block">
+        <div className="searchbar ">
+          <div className="searchIcon">
+            <SearchIcon />
+          </div>
+          <InputBase
+            className="input"
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
         </div>
-        <InputBase
-          className="input"
-          placeholder="Search…"
-          inputProps={{ "aria-label": "search" }}
-        />
       </div>
     </div>
   );

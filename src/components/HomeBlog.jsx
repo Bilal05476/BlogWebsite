@@ -11,6 +11,7 @@ export default function HomeBlog() {
   return (
     <div className="blog__content">
       <div className="left__content">
+        {/* Featured Blog */}
         <div className="row m-3">
           <div className="col-md-12 mb-3">
             <BlogCard
@@ -27,6 +28,7 @@ export default function HomeBlog() {
           </div>
         </div>
 
+        {/* Deily Quotes */}
         <div className="container text-center">
           <h2 className="py-3" style={{ fontWeight: "700" }}>
             Daily Quotes
@@ -45,32 +47,9 @@ export default function HomeBlog() {
               className=" p-3"
             />
           </div>
-          <div className="col-md-3 mb-3">
-            <DailyBlog
-              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
-              title="everything you do in this life has the return good or bad"
-              author="Bilal Ahmed"
-              className=" p-3"
-            />
-          </div>
-          <div className="col-md-3 mb-3">
-            <DailyBlog
-              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
-              title="everything you do in this life has the return good or bad"
-              author="Bilal Ahmed"
-              className=" p-3"
-            />
-          </div>
-          <div className="col-md-3 mb-5">
-            <DailyBlog
-              img="https://i.pinimg.com/originals/7a/cc/15/7acc1584594b6fc6b914489e0278dd58.jpg"
-              title="everything you do in this life has the return good or bad"
-              author="Bilal Ahmed"
-              className=" p-3"
-            />
-          </div>
         </div>
 
+        {/* Random Blogs */}
         <div className="row m-3">
           <div className="col-md-6 mb-3">
             <BlogCard
@@ -87,6 +66,7 @@ export default function HomeBlog() {
         </div>
       </div>
 
+      {/* Right Side Addons */}
       <div className="right__content">
         <div className="row m-3">
           <div className="col-md-12 mb-3">
@@ -95,7 +75,7 @@ export default function HomeBlog() {
           <div className="col-md-12 mb-3 d-none d-md-block">
             <ServicesCard />
           </div>
-          <div className="col-md-12 mb-3 d-none d-md-block">
+          <div className="col-md-12 mb-3 ">
             <SubscriptionForm />
           </div>
         </div>
