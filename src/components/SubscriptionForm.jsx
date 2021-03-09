@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
@@ -32,19 +32,47 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BasicTextFields() {
   const classes = useStyles();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Hello world");
+    setName("");
+    setEmail("");
+  };
 
   return (
     <Paper>
-      <form className={classes.root} autoComplete="off">
+      <form className={classes.root} autoComplete="off" onSubmit={handleSubmit}>
         <Typography variant="h4" className="text-center">
           Get Free Email Updates!
         </Typography>
         <Typography variant="body2" className="text-center my-2">
           Join us for FREE to get instant email updates!
         </Typography>
-        <TextField className={classes.input} label="Name" />
-        <TextField className={classes.input} label="Email" />
-        <Button variant="contained" color="primary" className={classes.button}>
+        <TextField
+          className={classes.input}
+          label="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+          type="text"
+        />
+        <TextField
+          className={classes.input}
+          label="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          required
+        />
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          className={classes.button}
+        >
           Subscription
         </Button>
       </form>

@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem !important;
+}
+.contact__paper {
+  width: 70%;
+  display: flex;
+}
+.contact__img {
+  width: 50%;
+}
+.input__field {
+  margin: 1.2rem !important;
+  margin-bottom: 1.2rem !important;
+}
+.formBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact__btn {
+  margin: 1.2rem !important;
+  font-size: 1.8rem !important;
+  outline: none !important;
+  color: #fff !important;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+@media (max-width: 767px) {
+  .contact__paper {
+    display: block;
+  }
+  .contact__img {
+    width: 100%;
+  }
+  .contact__paper {
+    width: 90%;
+    margin: 2rem !important;
+  }
+}
