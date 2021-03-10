@@ -10,9 +10,22 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  TwitterShareButton,
+} from "react-share";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import {
+  TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+  TelegramIcon,
+} from "react-share";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,9 +81,9 @@ export default function BlogCard(props) {
           </CardContent>
         </CardActionArea>
       </NavLink>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing style={{ overflowX: "auto" }}>
         <IconButton
-          className=" text-danger"
+          className="text-danger"
           aria-label="add to favorites"
           style={{ outline: "none" }}
           onClick={counterInc}
@@ -78,9 +91,41 @@ export default function BlogCard(props) {
           <FavoriteIcon /> <span className="mx-1">{counter}</span>
         </IconButton>
 
-        <IconButton aria-label="share" style={{ outline: "none" }}>
-          <ShareIcon className="text-success" />
-        </IconButton>
+        <TwitterShareButton
+          url={`http://localhost:3000/blog/${props.blogId}`}
+          className="px-1"
+          style={{ outline: "none" }}
+        >
+          <TwitterIcon size={32} round={true} />
+        </TwitterShareButton>
+        <FacebookShareButton
+          url={`http://localhost:3000/blog/${props.blogId}`}
+          className="px-1"
+          style={{ outline: "none" }}
+        >
+          <FacebookIcon size={32} round={true} />
+        </FacebookShareButton>
+        <LinkedinShareButton
+          url={`http://localhost:3000/blog/${props.blogId}`}
+          className="px-1"
+          style={{ outline: "none" }}
+        >
+          <LinkedinIcon size={32} round={true} />
+        </LinkedinShareButton>
+        <WhatsappShareButton
+          url={`http://localhost:3000/blog/${props.blogId}`}
+          className="px-1"
+          style={{ outline: "none" }}
+        >
+          <WhatsappIcon size={32} round={true} />
+        </WhatsappShareButton>
+        <TelegramShareButton
+          url={`http://localhost:3000/blog/${props.blogId}`}
+          className="px-1"
+          style={{ outline: "none" }}
+        >
+          <TelegramIcon size={32} round={true} />
+        </TelegramShareButton>
       </CardActions>
     </Card>
   );
