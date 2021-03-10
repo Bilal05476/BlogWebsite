@@ -6,7 +6,7 @@
         "username": "Dan Abramov and Rachel Nabors",
         "datetime": "October 20, 2020",
         "title": "React v17.0",
-        "feature": false
+        "feature": true
     },
     "react-v16.0": {
         "id": "react-v16.0",
@@ -15,6 +15,6 @@
         "username": "Dan Abramov and Rachel Nabors",
         "datetime": "October 20, 2020",
         "title": "React v16.0",
-        "feature": true
+        "feature": false
     }
 }

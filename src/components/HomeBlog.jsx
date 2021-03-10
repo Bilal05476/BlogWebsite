@@ -15,27 +15,22 @@ export default function HomeBlog() {
         {/* Featured Blog */}
         <div className="row m-3">
           {Object.keys(Blog).map((item) => {
-            // console.log(Blog[item].feature ? "Hello" : "");
-
             const data = Blog[item];
             const desc = data.content.slice(0, 150);
-            console.log(data.feature);
-            {
-              data.feature === true && (
-                <>
-                  <div className="col-md-12 mb-3" key={data.id}>
-                    <BlogCard
-                      blogId={data.id}
-                      blogImg={data.blogImage}
-                      content={desc}
-                      userName={data.username}
-                      dateAndTime={data.datetime}
-                      title={data.title}
-                      userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
-                      className=" p-3"
-                    />
-                  </div>
-                </>
+            if (data.feature) {
+              return (
+                <div className="col-md-12 mb-3" key={data.id}>
+                  <BlogCard
+                    blogId={data.id}
+                    blogImg={data.blogImage}
+                    content={desc}
+                    userName={data.username}
+                    dateAndTime={data.datetime}
+                    title={data.title}
+                    userImg="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
+                    className=" p-3"
+                  />
+                </div>
               );
             }
           })}
