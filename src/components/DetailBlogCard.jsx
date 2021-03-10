@@ -18,24 +18,15 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
   },
   media: {
-    paddingTop: "36.25%", // 16:9
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginLeft: "auto",
-    transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
+    paddingTop: "auto", // 16:9
   },
   title: {
     padding: "4rem",
+    paddingTop: "13rem !important",
     fontWeight: "400",
     color: "#fff",
     backgroundImage:
-      "linear-gradient(120deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2))",
+      "linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4))",
   },
 }));
 
@@ -65,7 +56,7 @@ export default function DetailBlogCard(props) {
             variant="body2"
             color="textSecondary"
             component="p"
-            style={{ fontSize: "1.2rem" }}
+            style={{ fontSize: "1.8rem" }}
           >
             {props.content}
           </Typography>

@@ -1,11 +1,11 @@
 {
-    "react-v17.0": {
-        "id": "react-v17.0",
-        "blogImage": "http://blog.addthiscdn.com/wp-content/uploads/2014/11/addthis-react-flux-javascript-scaling.png",
-        "content": "React 17 enables gradual React upgrades. When you upgrade from React 15 to 16 (or, this time, from React 16 to 17), you would usually upgrade your whole app at once. This works well for many apps. But it can get increasingly challenging if the codebase was written more than a few years ago and isn’t actively maintained. And while it’s possible to use two versions of React on the page, until React 17 this has been fragile and caused problems with events. We’re fixing many of those problems with React 17. ",
-        "username": "Dan Abramov and Rachel Nabors",
-        "datetime": "October 20, 2020",
-        "title": "React v17.0",
+    "here’s-How-to-Write-a-Blog-Post-Like-a-Professional": {
+        "id": "here’s-How-to-Write-a-Blog-Post-Like-a-Professional",
+        "blogImage": "https://contenthub-static.grammarly.com/blog/wp-content/uploads/2019/11/Writing-Encyclopedia-Blog-hero-3-760x400.png",
+        "content": "You’ve got a topic. Awesome! Now, what’s your angle? Avoid a broad approach—get specific. You’ll get overwhelmed if you pick a huge subject like organic vegetable gardening and try to cover it all. Instead, go with “10 Budget-Friendly Ways to Start an Organic Vegetable Garden.” Think about the best approach to your topic. If you want to explain how to do something, a step-by-step how-to article could work well. Want to write about your favorite autobiographies or offer your best tips for throwing a memorable dinner party? Consider a listicle. There’s nothing wrong with a straight-up essay, either, as long as it’s well-organized.",
+        "username": "Karen Hertberg",
+        "datetime": "March 10, 2021",
+        "title": "Here’s How to Write a Blog Post Like a Professional",
         "feature": true
     },
     "react-v16.0": {

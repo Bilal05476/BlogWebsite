@@ -62,7 +62,6 @@ export default function HomeBlog() {
           {Object.keys(Blog).map((item) => {
             const data = Blog[item];
             const desc = data.content.slice(0, 150);
-
             return (
               <div className="col-md-6 mb-3" key={data.id}>
                 <BlogCard

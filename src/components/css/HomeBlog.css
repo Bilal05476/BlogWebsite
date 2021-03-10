@@ -40,6 +40,13 @@
   transition: 0.5s;
 }
 
+.blogImage:hover {
+  transform: scale(1.1) !important;
+  transition: 0.5s !important;
+  overflow: hidden !important;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 767px) {
   .blog__content {
     display: block;

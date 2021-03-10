@@ -17,7 +17,7 @@ const BlogDetails = () => {
   return (
     <div className="blog__content">
       <div className="row m-3">
-        <div className="col-md-4 mb-3">
+        <div className="col-md-12 mb-3">
           <DetailBlogCard
             id={blogid}
             blogImg={img}

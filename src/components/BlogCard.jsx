@@ -19,24 +19,15 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
   },
   media: {
-    paddingTop: "36.25%", // 16:9
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginLeft: "auto",
-    transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
+    paddingTop: "auto", // 16:9
   },
   title: {
     padding: "4rem",
+    paddingTop: "10rem !important",
     fontWeight: "400",
     color: "#fff",
     backgroundImage:
-      "linear-gradient(120deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2))",
+      "linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4))",
   },
 }));
 
@@ -52,8 +43,11 @@ export default function BlogCard(props) {
     <Card className={classes.root}>
       <NavLink className="link" to={`/blog/${props.blogId}`}>
         <CardActionArea key={props.blogId} style={{ outline: "none" }}>
-          <CardMedia className={classes.media} image={props.blogImg}>
-            <Typography className={`${classes.title} blogTitle`} variant="h3">
+          <CardMedia
+            className={`${classes.media} blogImage`}
+            image={props.blogImg}
+          >
+            <Typography className={`${classes.title} blogTitle`} variant="h4">
               {props.title}
             </Typography>
           </CardMedia>
