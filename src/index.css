@@ -4,3 +4,9 @@
   font-family: sans-serif;
   font-size: 82%;
 }
+.link {
+  text-decoration: none !important;
+}
+span:hover {
+  text-decoration: underline !important;
+}

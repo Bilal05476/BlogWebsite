@@ -12,6 +12,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+import BlogDetails from "./BlogDetails";
+
 const MainComponent = () => {
   return (
     <div>
@@ -22,6 +24,7 @@ const MainComponent = () => {
         <Switch>
           <Route exact path="/" component={HomeBlog}></Route>
           <Route exact path="/blog" component={Blog}></Route>
+          <Route exact path="/blog/:id" component={BlogDetails} />
           <Route exact path="/reactjs" component={ReactJSBlog}></Route>
           <Route exact path="/mernstack" component={MernBlog}></Route>
           <Route exact path="/firebase" component={FirebaseBlog}></Route>
