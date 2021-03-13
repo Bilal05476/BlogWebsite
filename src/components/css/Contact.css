@@ -2,20 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem !important;
+  margin-top: 6rem;
+  margin-bottom: 6rem !important;
 }
 .contact__paper {
   width: 70%;
   display: flex;
+  background-color: rgba(255, 255, 255, 1) !important;
 }
 .contact__img {
   width: 50%;
 }
-.input__field {
-  margin: 1.2rem !important;
-  margin-bottom: 1.2rem !important;
-}
+
 .formBox {
   width: 100%;
   display: flex;

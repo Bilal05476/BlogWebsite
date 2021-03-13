@@ -1,5 +1,5 @@
 .primary__head {
-  font-size: 3.2rem;
+  font-size: 1.2rem;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 .navbar-toggler {
@@ -9,5 +9,5 @@
 .navbar-nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
